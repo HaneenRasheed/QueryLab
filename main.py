@@ -27,7 +27,7 @@ def load_font(font_path):
 font_data = load_font("fonts/LufgaBold.ttf")
 
 # --- Load Images ---
-with open("img/logo(1).png", "rb") as f:
+with open("img/Logo(1).png", "rb") as f:
     logo_data = base64.b64encode(f.read()).decode()
 
 with open("img/setting.png", "rb") as f:
