@@ -24,7 +24,7 @@ def load_font(font_path):
         font_data = base64.b64encode(f.read()).decode()
     return font_data
 
-font_data = load_font("fonts/Lufgabold.ttf")
+font_data = load_font("fonts/LufgaBold.ttf")
 
 # --- Load Images ---
 with open("img/logo(1).png", "rb") as f:
@@ -108,11 +108,11 @@ st.sidebar.markdown(f"""
 """, unsafe_allow_html=True)
 
 with st.sidebar:
-    db_host = st.text_input("Host:", value="localhost")
-    db_port = st.text_input("Port:", value="3306")
-    db_user = st.text_input("Username:", value="root")
+    db_host = st.text_input("Host:", value="")
+    db_port = st.text_input("Port:", value="")
+    db_user = st.text_input("Username:", value="")
     db_password = st.text_input("Password:", type="password")
-    db_name = st.text_input("Database Name:", value="classicmodels")
+    db_name = st.text_input("Database Name:", value="")
     connect_button = st.button("Connect")
 
 # --- Main Area ---
